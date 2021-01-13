@@ -20,8 +20,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         diceWindowLeft.image = #imageLiteral(resourceName: "DiceSix")
+        diceWindowRight.image = #imageLiteral(resourceName: "DiceTwo")
     }
 
-
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        diceWindowLeft.image = #imageLiteral(resourceName: "DiceFour")
+        diceWindowRight.image = #imageLiteral(resourceName: "DiceFour")
+    }
+    
 }
 
